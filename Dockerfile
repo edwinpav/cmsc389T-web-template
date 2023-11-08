@@ -8,26 +8,25 @@
 # Base Image
 FROM node:10-alpine
 
-# Add a new user "node" that we'll be using for executing scripts
-USER node
+# Set the working directory inside the container
+WORKDIR /app
 
 # Create a directory for the app and its node_modules with node as its owner
-RUN mkdir -p /home/node/app/ && chown -R node:node /home/node/app
-
-# Set the working directory inside the container
-WORKDIR /home/node/app
+RUN chown -R node:node /app
 
 # Copy the package.json and package-lock.json (if present) to the container
 COPY package*.json ./
 
-# Switch to user node
+# Add a new user "node" that we'll be using for executing scripts
 USER node
+
+# Install all packages in package.json
+RUN npm install
 
 # Expose port 8080
 EXPOSE 8080
 
-# Install all packages in package.json
-RUN npm install
+COPY . .
 
 # Run the app
 CMD ["node", "app.js"]

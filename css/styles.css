@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Optima;
-  background-color: #FCF7FF;
+  background-color: gray;
 }
 
 .center {
@@ -23,15 +23,15 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: #655560;
+  background: black;
   padding: 2%;
   text-align: center;
 
 }
 
 .panel {
-  background-color: #655560;
-  color: #FCF7FF;
+  background-color: black;
+  color: gray;
 
   width: 100%;
   height: 30vh;
@@ -43,6 +43,18 @@ header {
 
 }
 
+.skills-panel {
+  position: center;
+  background-color: black;
+  color: white;
+
+  width: 50%;
+  height: 30vh;
+
+  margin: auto;
+  padding-top: 10px;
+}
+
 .flex-container {
   display: flex;
   flex-flow: row wrap;
@@ -50,7 +62,7 @@ header {
 
 footer {
   display: flex;
-  background-color: #655560;
+  background-color: black;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -64,7 +76,7 @@ footer {
 }
 
 .leftFooter {
-  color: #655560;
+  color: gray;
   font-size: 14px;
   margin: auto;
   padding-right: 30%;
@@ -144,7 +156,7 @@ section:nth-child(1) {
 
 section:nth-child(2) {
 
-  background-color: #FCF7FF;
+  background-color: gray;
 
 
 }
@@ -167,7 +179,7 @@ h3 {
 /* Add a black background color to the top navigation */
 .topnav {
   overflow: hidden;
-  background-color: #655560;
+  background-color: black;
 }
 
 /* Style the links inside the navigation bar */
@@ -212,7 +224,7 @@ h3 {
 .same-line {
   display: flex;
   justify-content: space-between;
-  background-color: #655560;
+  background-color: black;
 
 }
 

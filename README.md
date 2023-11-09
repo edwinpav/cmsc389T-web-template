@@ -2,6 +2,8 @@
 
 **GitHub Pages Link**: https://edwinpav.github.io/cmsc389T-web-template/
 
+**Terpconnect Website Link**: https://terpconnect.umd.edu/~edwinpav/cmsc389T-web-template/index.html
+
 ### Changes I made
 1. Edited some of the style
     - Changed header and footer background to black

@@ -2,7 +2,15 @@ version: '3'
 
 services:
   nodejs:
+    build: 
+      context: .
+      dockerfile: Dockerfile
     #fill out the configuration here
+    image: node:10-alpine
+    container_name: nodejs
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
     networks:
       - app-network
   
@@ -28,7 +36,7 @@ volumes:
     driver_opts:
       type: none
       #fill out your absolute path to your folder here
-      device: /absolute/path/to/web/template/folder
+      device: /Users/edwinpavlovsky/cmsc389T/cmsc389T-web-template
       o: bind
 
 networks:

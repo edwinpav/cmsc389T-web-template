@@ -2,15 +2,13 @@ version: '3'
 
 services:
   nodejs:
+    #fill out the configuration here
     build: 
       context: .
       dockerfile: Dockerfile
-    #fill out the configuration here
-    image: node:10-alpine
-    container_name: nodejs
+    image: website
+    container_name: website
     restart: unless-stopped
-    ports:
-      - "8080:8080"
     networks:
       - app-network
   
